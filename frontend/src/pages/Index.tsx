@@ -67,7 +67,7 @@ const Index = () => {
     setPrediction(null);
 
     try {
-      const response = await fetch(`http://18.232.139.181:8001/predict`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/predict`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
